@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DiceRollerWithImages</string>
+    <string name="girar">Girar</string>
+    <string name="Descripcion_imagen_dado">Resultado de los giros del dado</string>
+</resources>
