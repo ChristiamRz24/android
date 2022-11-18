@@ -1,0 +1,44 @@
+{
+  "indexes": [
+    {
+      "collectionId": "osposts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "category", "mode": "ASCENDING" },
+        { "fieldPath": "avgRating", "mode": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionId": "osposts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "price", "mode": "ASCENDING" },
+        { "fieldPath": "avgRating", "mode": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionId": "osposts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "category", "mode": "ASCENDING" },
+        { "fieldPath": "numRatings", "mode": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionId": "osposts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "price", "mode": "ASCENDING" },
+        { "fieldPath": "numRatings", "mode": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionId": "osposts",
+      "fields": [
+        { "fieldPath": "category", "mode": "ASCENDING" },
+        { "fieldPath": "price", "mode": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

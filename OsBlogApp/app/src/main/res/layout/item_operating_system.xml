@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/osItemImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#757575"
+        android:scaleType="fitXY"
+        android:src="@drawable/windows"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/osItemName"
+        style="@style/AppTheme.Subheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@+id/osItemImage"
+        app:layout_constraintTop_toTopOf="@+id/osItemImage"
+        tools:text="Some Operating System" />
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/osItemRating"
+        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/osItemName"
+        app:layout_constraintTop_toBottomOf="@+id/osItemName" />
+
+    <TextView
+        android:id="@+id/osItemNumRatings"
+        style="@style/AppTheme.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:textColor="@color/greyDisabled"
+        app:layout_constraintBottom_toBottomOf="@+id/osItemRating"
+        app:layout_constraintStart_toEndOf="@+id/osItemRating"
+        app:layout_constraintTop_toTopOf="@+id/osItemRating"
+        tools:text="(10)" />
+
+    <TextView
+        android:id="@+id/osItemCategory"
+        style="@style/AppTheme.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/greySecondary"
+        app:layout_constraintStart_toStartOf="@+id/osItemRating"
+        app:layout_constraintTop_toBottomOf="@+id/osItemRating"
+        tools:text="Desktop" />
+
+    <TextView
+        android:id="@+id/osItemPrice"
+        style="@style/AppTheme.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/greySecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/osItemName"
+        tools:text="Free" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
